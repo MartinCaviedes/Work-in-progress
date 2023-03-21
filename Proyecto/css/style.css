@@ -1,0 +1,60 @@
+body {
+    background-color: #ffffff;
+    color: #161515;
+    }
+    
+    h1 {
+    font-size: 2.5em;
+    color: #252525;
+    }
+
+section {
+    display: flex;
+    width: 700px;
+    height: 300px;
+    }
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    }
+    
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);  
+}
+
+header{
+
+    padding: 5px;
+    overflow: hidden;
+}
+
+nav{
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    float: left;
+    /* top y bottom 0px y right 20px */
+    margin: 0 10px;
+}
+
+nav a{ 
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(135, 143, 253);
+}
